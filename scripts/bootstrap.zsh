@@ -7,16 +7,16 @@ brew bundle --file="$HOME/dotfiles/Brewfile"
 
 # Install Node
 echo "Setting up Node (fnm + Corepack)..."
-~/dotfiles/scripts/node-setup.zsh
+bash ~/dotfiles/scripts/node-setup.sh
 
 # Install Composer globals
 echo "Installing Composer globals (drush, standards, phpstan extensions)..."
-~/dotfiles/scripts/composer-global.sh
+bash ~/dotfiles/scripts/composer-global.sh
 
 # Install macOS defaults and update system applications
 echo "Setting up macOS_defaults and updating system applications (Composer, Node, Homebrew)..."
-~/dotfiles/bin/macos_defaults.sh
-~/dotfiles/bin/update.sh
+bash ~/dotfiles/bin/macos_defaults.sh
+bash ~/dotfiles/bin/update.sh
 
 # Stow dotfiles
 echo "Stowing dotfiles to proper directories..."
