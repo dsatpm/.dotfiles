@@ -7,7 +7,7 @@ brew bundle --file="$HOME/dotfiles/Brewfile"
 
 # Install Node
 echo "Setting up Node (fnm + Corepack)..."
-bash ~/dotfiles/scripts/node-setup.sh
+bash ~/dotfiles/scripts/node-setup.zsh
 
 # Install Composer globals
 echo "Installing Composer globals (drush, standards, phpstan extensions)..."
