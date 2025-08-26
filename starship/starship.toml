@@ -1,0 +1,113 @@
+format = """
+$custom\
+[](bg:#828df3 fg:#000000)\
+$directory\
+[](fg:#828df3 bg:#d7db4f)\
+$git_branch\
+$git_status\
+[](fg:#d7db4f bg:#e6dc74)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#e6dc74 bg:#e39a50)\
+$time\
+[](fg:#e39a50 bg:#d66eae)\
+$cmd_duration\
+$status\
+[ ](fg:#d66eae)\
+\n$character"""
+
+command_timeout = 2000
+
+[custom.logo1]
+command = '''echo -n "░▒▓"'''
+when = "true"
+format = '[$output]($style)'
+style = "fg:#000000"
+
+[custom.logo2]
+command = '''echo -n "hello"'''
+when = "true"
+format = '[$output]($style)'
+style = "fg:#d7db4f bg:#000000"
+
+[custom.logo3]
+command = '''echo -n "world"'''
+when = "true"
+format = '[$output]($style)'
+style = "fg:#d66eae bg:#000000"
+
+[custom.logo4]
+command = '''echo -n ";)  "'''
+when = "true"
+format = '[$output]($style)'
+style = "fg:#828df3 bg:#000000"
+
+[directory]
+style = "fg:#090c0c bg:#828df3"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#d7db4f"
+format = '[[ $symbol $branch ](fg:#090c0c bg:#d7db4f)]($style)'
+
+[git_status]
+style = "bg:#d7db4f"
+conflicted = '⚔️'
+ahead = '⏫'
+behind = '⏬'
+diverged = '🔀'
+up_to_date = '✓'
+untracked = '🆕'
+stashed = '📦'
+modified = '✏️'
+staged = '✅'
+renamed = '🔁'
+deleted = '❌'
+format = '([$all_status]($style))'
+
+[nodejs]
+symbol = ""
+style = "bg:#e6dc74"
+format = '[[ $symbol ($version) ](fg:#090c0c bg:#e6dc74)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#e6dc74"
+format = '[[ $symbol ($version) ](fg:#090c0c bg:#e6dc74)]($style)'
+
+[golang]
+symbol = "ﳑ"
+style = "bg:#e6dc74"
+format = '[[ $symbol ($version) ](fg:#090c0c bg:#e6dc74)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#e6dc74"
+format = '[[ $symbol ($version) ](fg:#090c0c bg:#e6dc74)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#e39a50"
+format = '[[  $time ](fg:#090c0c bg:#e39a50)]($style)'
+
+[cmd_duration]
+min_time = 60000
+format = '[[ took $duration ](fg:#090c0c bg:#d66eae)]($style)'
+style = "fg:#090c0c bg:#d66eae"
+
+[status]
+disabled = false
+format = '[[ ❌ ](fg:#090c0c bg:#d66eae)]($style)'
+style = "fg:#090c0c bg:#d66eae"

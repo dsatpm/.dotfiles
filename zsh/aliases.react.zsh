@@ -1,0 +1,6 @@
+alias npmr="npm run"
+alias npms="npm start"
+alias npmb="npm build"
+alias npmt="npm test"
+alias y="yarn"
+alias p="pnpm"

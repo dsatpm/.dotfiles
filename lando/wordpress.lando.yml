@@ -1,0 +1,13 @@
+name: my-wordpress
+recipe: wordpress
+config:
+  php: "8.3"
+  webroot: .
+  xdebug: true
+services:
+  database:
+    type: mariadb:10.6
+tooling:
+  wp:
+    service: appserver
+    cmd: wp
