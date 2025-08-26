@@ -6,12 +6,12 @@ Tools: Homebrew, Lando, PHP 8.x, Composer, WP-CLI, PHPCS (Drupal + WPCS), PHPSta
 
 1. Review `Brewfile` and `scripts/*` to fit your needs.
 2. Install everything:
-   brew bundle --file="$HOME/.config/dotfiles/Brewfile"
-   "$HOME/.config/dotfiles/scripts/node-setup.zsh"
-   "$HOME/.config/dotfiles/scripts/composer-global.sh"
+   brew bundle --file="$HOME/.dotfiles/Brewfile"
+   "$HOME/.dotfiles/scripts/node-setup.zsh"
+   "$HOME/.dotfiles/scripts/composer-global.sh"
 3. Link shell/editor:
-   ln -sf "$HOME/.config/dotfiles/zsh/.zshrc" "$HOME/.zshrc"
-   ln -sf "$HOME/.config/dotfiles/node/.editorconfig" "$HOME/.editorconfig"
+   ln -sf "$HOME/.dotfiles/zsh/.zshrc" "$HOME/.zshrc"
+   ln -sf "$HOME/.dotfiles/node/.editorconfig" "$HOME/.editorconfig"
 
 ## Project usage
 
