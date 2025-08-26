@@ -20,12 +20,12 @@ bash ~/dotfiles/bin/update.sh
 
 # Stow dotfiles
 echo "Stowing dotfiles to proper directories..."
-stow -v --dir="$HOME/dotfiles" --target="$HOME"/git .gitignore_global
-stow -v --dir="$HOME/dotfiles" --target="$HOME"/.config/nvim .config/nvim
-stow -v --dir="$HOME/dotfiles" --target="$HOME"/.ssh .ssh
-stow -v --dir="$HOME/dotfiles" --target="$HOME"/.config/starship .config/starship
-stow -v --dir="$HOME/dotfiles" --target="$HOME"/.config/tmux .config/tmux
-stow -v --dir="$HOME/dotfiles" --target="$HOME"/.zshrc .zshrc
+stow -v --dir="$HOME/dotfiles/git" --target="$HOME"/ .gitignore_global
+stow -v --dir="$HOME/dotfiles/nvim" --target="$HOME"/.config/nvim .config/nvim
+stow -v --dir="$HOME/dotfiles/ssh" --target="$HOME"/.ssh .ssh
+stow -v --dir="$HOME/dotfiles/starship" --target="$HOME"/.config/starship .config/starship
+stow -v --dir="$HOME/dotfiles/tmux" --target="$HOME"/.config/tmux .config/tmux
+stow -v --dir="$HOME/dotfiles/zsh" --target="$HOME"/.zshrc .zshrc
 
 # Copy Node editor settings
 cp "$HOME/dotfiles/node/.editorconfig" "$HOME/.editorconfig"
