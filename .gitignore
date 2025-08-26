@@ -1,0 +1,12 @@
+# Local composer home (config, cache, vendor)
+.composer/
+
+# OS and editor junk
+.DS_Store
+*.swp
+*.swo
+
+# Node installs/builds (if any are created locally)
+node_modules/
+dist/
+build/

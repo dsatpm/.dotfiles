@@ -1,5 +1,0 @@
-alias wp="lando wp"
-alias wpi="lando wp plugin install"
-alias wpa="lando wp plugin activate"
-alias wpd="lando wp plugin deactivate"
-alias wpt="lando wp theme"

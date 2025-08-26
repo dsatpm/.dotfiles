@@ -1,7 +1,0 @@
-alias dr="drush"
-alias ldr="lando drush"
-alias lc="lando composer"
-alias lcr="lando composer require"
-alias lcu="lando composer update"
-alias xon="lando xdebug on"
-alias xoff="lando xdebug off"
