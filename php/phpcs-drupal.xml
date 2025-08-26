@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<ruleset name="Drupal">
-  <rule ref="Drupal"/>
-  <rule ref="DrupalPractice"/>
-  <file>modules/custom</file>
-  <file>themes/custom</file>
-</ruleset>

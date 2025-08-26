@@ -1,12 +1,9 @@
 module.exports = {
   env: { browser: true, es2021: true, node: true },
-  extends: [
-    "eslint:recommended",
-    "prettier",
-  ],
+  extends: ['eslint:recommended', 'prettier'],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  ignorePatterns: ["dist/", "build/", "*.min.js"],
+  ignorePatterns: ['dist/', 'build/', '*.min.js'],
 };
