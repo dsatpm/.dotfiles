@@ -76,9 +76,14 @@ export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 # ──────────────────────────────────────────────────────
 #  Aliases & customizations
 # ──────────────────────────────────────────────────────
+
+# General aliases
 alias ls='eza -al --group-directories-first'
 alias cat='bat -pp'
 alias grep='rg --color=always'
+alias reset='source ~/.zshrc'
+
+# Drupal aliases
 alias nukeit='lando poweroff && docker system prune -a --volumes && rm -rf ~/.lando/cache'
 alias novendor='rm -rf vendor web/core web/themes/contrib web/modules/contrib web/libraries web/profiles/contrib'
 alias cleanatdove='rm -rf composer.lock vendor web/core web/themes/contrib web/modules/contrib web/libraries web/profiles/contrib web/themes/custom/atdove/node_modules web/themes/custom/atdove/build'
