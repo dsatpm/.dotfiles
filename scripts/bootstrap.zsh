@@ -15,7 +15,7 @@ echo "Installing Composer globals (drush, standards, phpstan extensions)..."
 
 # Install macOS defaults and update system applications
 echo "Setting up macOS_defaults and updating system applications (Composer, Node, Homebrew)..."
-~/dotfiles/bin/macos_defaults.zsh
+~/dotfiles/bin/macos_defaults.sh
 ~/dotfiles/bin/update.sh
 
 # Stow dotfiles
