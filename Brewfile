@@ -1,7 +1,4 @@
 
-tap "homebrew/core"
-tap "homebrew/cask"
-
 brew "php"
 brew "composer"
 brew "php-code-sniffer"
