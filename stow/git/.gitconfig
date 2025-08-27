@@ -1,0 +1,30 @@
+[user]
+  name = dsatpm
+  email = jeremiah@helloworlddevs.com
+
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignore_global
+
+[commit]
+  gpgsign = true
+
+[init]
+  defaultBranch = main
+
+[pull]
+  rebase = false
+
+[merge]
+  conflictstyle = zdiff3
+
+[diff]
+  colorMoved = default
+
+[alias]
+  lg = log --graph --decorate --oneline --abbrev-commit --all
+  amend = commit --amend --no-edit
+  undo = reset --soft HEAD~1
+
+[includeIf "gitdir:~/work/"]
+  path = ~/.work.gitconfig
