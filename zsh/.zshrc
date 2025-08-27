@@ -90,7 +90,7 @@ alias cleanatdove='rm -rf composer.lock vendor web/core web/themes/contrib web/m
 alias cleancowlitz='rm -rf composer.lock vendor web/core web/themes/contrib web/modules/contrib web/libraries web/profiles/contrib web/themes/custom/cowlitz_bootstrap/node_modules web/themes/custom/cowlitz_bootstrap/build'
 
 # Load any dotfiles-managed alias sets
-for f in "$HOME/.config/dotfiles/zsh/aliases."*.zsh; do
+for f in "$HOME/dotfiles/zsh/aliases."*.zsh; do
   [ -r "$f" ] && . "$f"
 done
 
